@@ -13,13 +13,10 @@ import java.sql.SQLException;
 
 public class Main extends Application {
 
-    //static String url = "jdbc:sqlite:C:\\Benjih\\RUC\\5 semester\\Portfolio3_database";
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-
-        DataConnection dataConnection;
-
+        
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 600, 475));

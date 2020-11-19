@@ -2,16 +2,13 @@ package sample;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TableColumn;
 
 import java.sql.*;
-import java.util.ArrayList;
 
-import static java.sql.DriverManager.getConnection;
 
 public class Controller {
     public TableView studentTable;
@@ -98,7 +95,7 @@ public class Controller {
     }
 
     public void initialize() throws SQLException {
-        String url = "jdbc:sqlite:C:\\Benjih\\RUC\\5 semester\\Portfolio3_database";
+        String url = "jdbc:sqlite:C:\\Users\\Micool\\Documents\\GitHub\\Portfolio_3\\Portfolio_3\\Portfolio3_database";
 
         try {
             dataConnection = new DataConnection(url);
